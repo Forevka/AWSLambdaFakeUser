@@ -25,7 +25,7 @@ namespace AWSLambdaFakeUser
         static AmazonDynamoDBClient client;
         static DynamoDBContext worker;
 
-        public void InitialiseSecrets()
+        public async Task InitialiseSecrets()
         {
 
             string secretName = Environment.GetEnvironmentVariable("secretName");
@@ -44,7 +44,7 @@ namespace AWSLambdaFakeUser
             GetSecretValueResponse response;
             try
             {
-                response = clientSecret.GetSecretValueAsync(request).Result;
+                response = await clientSecret.GetSecretValueAsync(request);
             }
             catch (Exception)
             {
@@ -75,9 +75,8 @@ namespace AWSLambdaFakeUser
         }
         public async Task<int> FunctionHandler(ILambdaContext context)
         {
-            InitialiseSecrets();
-            var generator = new GenerateRandomUser();
-            FakeUser u = await generator.NewUser();
+            await InitialiseSecrets();
+            FakeUser u = await new GenerateRandomUser().NewUser();
             int r = await SaveUser(u);
 
             return r;
