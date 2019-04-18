@@ -75,9 +75,14 @@ namespace AWSLambdaFakeUser
         }
         public async Task<int> FunctionHandler(ILambdaContext context)
         {
+            context.Logger.LogLine(context.LogStreamName + " " + context.LogGroupName);
+            context.Logger.LogLine("Start function GenerateFakeUser at "+ DateTime.Now.ToString("h:mm:ss tt"));
             await InitialiseSecrets();
+            context.Logger.LogLine("Initialised secret GenerateFakeUser at " + DateTime.Now.ToString("h:mm:ss tt"));
             FakeUser u = await new GenerateRandomUser().NewUser();
+            context.Logger.LogLine("Generated Fake User at" + DateTime.Now.ToString("h:mm:ss tt"));
             int r = await SaveUser(u);
+            context.Logger.LogLine("Pushed user in Table at " + DateTime.Now.ToString("h:mm:ss tt"));
 
             return r;
         }
