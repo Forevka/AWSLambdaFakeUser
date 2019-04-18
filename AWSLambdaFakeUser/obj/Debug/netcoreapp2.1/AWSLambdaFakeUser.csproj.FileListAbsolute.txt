@@ -1,0 +1,11 @@
+C:\Users\bohdan.lushchyk\source\repos\AWSLambdaFakeUser\AWSLambdaFakeUser\bin\Debug\netcoreapp2.1\AWSLambdaFakeUser.deps.json
+C:\Users\bohdan.lushchyk\source\repos\AWSLambdaFakeUser\AWSLambdaFakeUser\bin\Debug\netcoreapp2.1\AWSLambdaFakeUser.runtimeconfig.json
+C:\Users\bohdan.lushchyk\source\repos\AWSLambdaFakeUser\AWSLambdaFakeUser\bin\Debug\netcoreapp2.1\AWSLambdaFakeUser.runtimeconfig.dev.json
+C:\Users\bohdan.lushchyk\source\repos\AWSLambdaFakeUser\AWSLambdaFakeUser\bin\Debug\netcoreapp2.1\AWSLambdaFakeUser.dll
+C:\Users\bohdan.lushchyk\source\repos\AWSLambdaFakeUser\AWSLambdaFakeUser\bin\Debug\netcoreapp2.1\AWSLambdaFakeUser.pdb
+C:\Users\bohdan.lushchyk\source\repos\AWSLambdaFakeUser\AWSLambdaFakeUser\obj\Debug\netcoreapp2.1\AWSLambdaFakeUser.csprojAssemblyReference.cache
+C:\Users\bohdan.lushchyk\source\repos\AWSLambdaFakeUser\AWSLambdaFakeUser\obj\Debug\netcoreapp2.1\AWSLambdaFakeUser.csproj.CoreCompileInputs.cache
+C:\Users\bohdan.lushchyk\source\repos\AWSLambdaFakeUser\AWSLambdaFakeUser\obj\Debug\netcoreapp2.1\AWSLambdaFakeUser.AssemblyInfoInputs.cache
+C:\Users\bohdan.lushchyk\source\repos\AWSLambdaFakeUser\AWSLambdaFakeUser\obj\Debug\netcoreapp2.1\AWSLambdaFakeUser.AssemblyInfo.cs
+C:\Users\bohdan.lushchyk\source\repos\AWSLambdaFakeUser\AWSLambdaFakeUser\obj\Debug\netcoreapp2.1\AWSLambdaFakeUser.dll
+C:\Users\bohdan.lushchyk\source\repos\AWSLambdaFakeUser\AWSLambdaFakeUser\obj\Debug\netcoreapp2.1\AWSLambdaFakeUser.pdb
