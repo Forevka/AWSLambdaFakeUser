@@ -87,15 +87,7 @@ namespace AWSLambdaFakeUser
             ListTablesResponse tableResponse = await client.ListTablesAsync();
             if (tableResponse.TableNames.Contains(tableName))
             {
-                FakeUserModel user = new FakeUserModel
-                {
-                    ID = u.ID,
-                    Name = u.Name,
-                    Gender = u.Gender,
-                    Email = u.Email,
-                    Nat = u.Nat
-                };
-                await worker.SaveAsync(user);
+                await worker.SaveAsync(u.Model);
                 return 200;
             }
             else

@@ -31,7 +31,8 @@ namespace AWSLambdaFakeUser
         public string Email { get; set; }
         public string Nat { get; set; }
         public string Gender { get; set; }
-        
+        public FakeUserModel Model { get; set; }
+
         public FakeUser(string json)
         {
             JObject jObject = JObject.Parse(json);
@@ -39,7 +40,14 @@ namespace AWSLambdaFakeUser
             Email = (string)jObject["results"][0]["email"];
             Nat = (string)jObject["results"][0]["nat"];
             Gender = (string)jObject["results"][0]["gender"];
-            Console.WriteLine(ID, Name, Gender, Nat, Email);
+            Model = new FakeUserModel
+            {
+                ID = this.ID,
+                Name = this.Name,
+                Gender = this.Gender,
+                Email = this.Email,
+                Nat = this.Nat
+            };
         }
 
         private string JToken(Dictionary<string, string> source, string sequenceSeparator)
